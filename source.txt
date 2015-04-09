@@ -1,0 +1,28 @@
+This is a widget that was made to be used within the Center for E-Learning's Learning Object architecture. It can be used anywhere on the web that uses HTML, CSS, and JS to get the job done.
+
+This is an easy one.
+
+// ================== The JS
+// Insert this at the top of the linked JS file.
+// The ID needs to match the ID in the HTML structure.
+// Change "The answer" to whatever you want to fill in the blank.
+
+
+document.getElementById("fillBlank1").addEventListener("click", function(){this.innerHTML = " The answer ";}, false);
+
+
+// ================= The HTML Structure.
+<!-- It's all about that span element. Wrap that span element around any blank, and it will fill it in with whatever you put to replace "The answer" from the JS.  -->
+
+<ol>
+<li>
+    <p>
+    <span id="fillBlank1" class="CEL-questionBlank">___________</span>are products that the U.S. Department of Agriculture has evaluated in order to determine if the products meet a meal pattern requirement.
+    </p>
+    </li>
+</ol>
+
+// ============== The CSS Styles
+
+/* This gives the blank a hover state background color, and since it already exists in the linked CSS you shouldn't have to touch this style, but I put it here for reference just in case.  */
+.CEL-questionBlank:hover{background-color: #bbcff6;}
